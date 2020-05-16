@@ -1,0 +1,120 @@
+body {
+    background-image: radial-gradient(#000000, #141414);
+    color: white;
+}
+
+/*Se a tela tiver menor que 400px, carrega esses estilos*/
+@media (min-width: 400px) {
+
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    padding: 14px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu img {
+    padding: 5px 20px;
+    width: 35px;
+    height: 44px;
+}
+
+/* fim da nav*/
+
+.img-profile{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    background-image: url("../img/Eu.jpg");
+    background-size: cover;
+    background-position: bottom -50px right 0px; 
+    border: 5px solid white;
+}
+
+h1, h2 {
+    text-align: center;    
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.sm-border {
+    border-radius: 5px;
+    background-color: white;
+    height: 3px;
+    width: 800px;
+    margin-top: 15px;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+}
+
+.box spam {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: -10px;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-40px, -40px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+}
+
+/*Fim da Home*/
