@@ -1,6 +1,7 @@
 body {
-    background-image: radial-gradient(#000000, #141414);
+    background-image: radial-gradient(#000000, #0a0a0a);
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*Se a tela tiver menor que 400px, carrega esses estilos*/
@@ -21,6 +22,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul{
@@ -31,19 +33,17 @@ header {
 
 .menu li {
     list-style-type: none;
+    padding: 14px;
 }
 
 .menu a {
-    padding: 14px;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .menu img {
-    padding: 5px 20px;
     width: 35px;
     height: 44px;
 }
@@ -62,18 +62,17 @@ header {
     border: 5px solid white;
 }
 
-h1, h2 {
+header h1, h2 {
     text-align: center;    
 }
 
-h1{
+header h1{
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     margin-top: 40px;
 }
 
-h2 {
-    font-family: 'Open Sans', sans-serif;
+header h2 {
     font-weight: 200;
     font-size: 32px;
     margin-top: 30px;
@@ -86,33 +85,7 @@ h2 {
     margin-top: 15px;
     background: linear-gradient(-45deg,  #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3);
     background-size: 400%;
-    -webkit-animation: gradbar 5s ease infinite;
-    -moz-animation: gradbar 5s ease infinite;
     animation: gradbar 5s ease infinite;      
-}
-
-@-webkit-keyframes gradbar {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes gradbar {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
 }
 
 @keyframes gradbar {
@@ -158,3 +131,40 @@ h2 {
 }
 
 /*Fim da Home*/
+
+.section h2 {
+    font-weight: 500;
+    font-size: 32px;
+    padding-top: 100px;
+}
+
+/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+*/
+
+.sub-border {
+    border-radius: 5px;
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background: white;
+}
+
+.about {
+    height: 100vh;
+}
+
+.about p {
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.3;
+    word-spacing: 1.1;
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
